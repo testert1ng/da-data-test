@@ -58,7 +58,7 @@ AND l.LogID=v.LogID
 JOIN AccountDetails AS ad
 ON jt.AcctID=ad.AcctID
 JOIN EntityDetails AS ed
-ON jt.EntID=ed.EntID
+ON jt.EntID=ed.EntID;
 ```
 
 Also, the extracted results will be 
