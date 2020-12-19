@@ -43,8 +43,8 @@ An example query can be
 SELECT v.ID, jt.AcctID, ad.AcctDesc, jt.EntID, ed.EntDesc, l.LogID, jt.TimeStamp, l.UserName, l.UploadDesc, v.Month, v.Value
 FROM (
 	SELECT v.AcctID, v.EntID, v.Month, MAX(TimeStamp) AS TimeStamp
-    FROM Values AS v
-    JOIN Logs AS l
+	FROM Values AS v
+	JOIN Logs AS l
 	ON v.LogID=l.LogID
 	GROUP BY v.AcctID, v.EntID, v.Month
 ) AS jt
